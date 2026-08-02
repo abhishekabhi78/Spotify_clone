@@ -241,6 +241,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: none
  }
  .player-control-icon{
     font-size:1.2rem;
@@ -356,4 +357,127 @@ body {
     border-radius:50%;
     background:#1db954;
     margin-top:-2.89px;
+}
+/* =================== TABLET =================== */
+
+@media (max-width:992px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .card{
+        width:140px;
+    }
+
+    .progress-bar{
+        width:60%;
+    }
+
+}
+
+
+/* =================== MOBILE =================== */
+
+@media (max-width:768px){
+
+    body{
+        overflow:auto;
+    }
+
+    .main{
+        flex-direction:column;
+        height:auto;
+        padding:0;
+    }
+
+    .sidebar{
+        width:100%;
+        margin:0;
+        border-radius:0;
+    }
+
+    .main-content{
+        margin:0;
+        border-radius:0;
+        padding:1rem;
+        margin-bottom:90px;
+    }
+
+    .cards-container{
+        justify-content:center;
+    }
+
+    .card{
+        width:45%;
+        margin:10px;
+    }
+
+    .sticky-nav-options .hide{
+        display:none;
+    }
+
+    /* PLAYER */
+
+    .music-player{
+        height:90px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .album{
+        display:none;
+    }
+
+    .controls{
+        display:none;
+    }
+
+    .player{
+        width:95%;
+    }
+
+    .player-controls i{
+        margin:0 10px;
+        font-size:18px;
+    }
+
+    #playBtn{
+        font-size:32px;
+    }
+
+    .progress-bar{
+        width:70%;
+    }
+
+}
+
+
+/* =================== SMALL MOBILE =================== */
+
+@media (max-width:480px){
+
+    .card{
+        width:90%;
+    }
+
+    .player-controls i{
+        margin:0 7px;
+        font-size:16px;
+    }
+
+    #playBtn{
+        font-size:28px;
+    }
+
+    .curr-time,
+    .end-time{
+        font-size:12px;
+    }
+
+    .progress-bar{
+        width:65%;
+    }
+
 }
