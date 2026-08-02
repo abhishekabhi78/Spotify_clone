@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player- Music to everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assests/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+            <div class="nav-option">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+        </div>
+        <div class="library">
+            <div class="option">
+                <div class="lib-option nav-option">
+                    <img src="./assests/library_icon.png" alt="icon">
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="lib-box">
+                <div class="box">
+                    <div class="box-p1">Create Your Playlist</div>
+                    <div class="box-p2">It's easy will help you</div>
+                    <button class="badge">Create Playlist</button>
+                </div>
+             
+                <div class="box">
+                    <div class="box-p1">Let's find some podcasts to follow</div>
+                    <div class="box-p2">We will keep updated to new episodes</div>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+         </div>
+       </div>
+      <div class="main-content">
+           <div class="sticky-nav">
+              <div class="sticky-nav-icons"> 
+                 <img src="./assests/backward_icon.png">
+                 <img src="./assests/forward_icon.png">
+              </div>
+              <div class="sticky-nav-options"> 
+                 <button class="badge nav-items hide">Explore Premium</button>
+                 <button class="badge nav-items badge-dark hide"><i class="fa-solid fa-download"></i> Install App</button>
+           
+                 <i class="nav-items fa-regular  fa-user" style="margin-top: 1rem;"></i>
+             </div>
+           </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                 <div class="card">
+                    <img src="./assests/card1img.jpeg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Top 50- Global</p>
+                    <p class="card-info">Your daily updates of your most played</p>
+                 </div>
+           </div>
+           <h2>Trending Now</h2>
+            <div class="cards-container">
+                 <div class="card " data-song="./hindi/Darshan Raval - Mahiye Jinna Sohna(Official Lyrical Video) - DarshanRavalVEVO.mp3">
+                    <img style="height: fit-content;" src="./assests/card2img.jpeg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Mahiye Jinna Sohna(Official Lyrical Video)</p>
+                    <p class="card-info">Darshan Raval</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Kaifi Khalil - Kahani Suno 2.0 [Official Music Video] - Kaifi Khalil.mp3">
+                    <img style="height: fit-content;" src="./assests/kahani-suno-.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle"> Kahani Suno 2.0</p>
+                    <p class="card-info">Kaifi Khalil</p>
+                 </div>
+                 <div class="card" data-song="./hindi/LEO - Naa Ready Song Video  Thalapathy Vijay  Lokesh Kanagaraj  Anirudh Ravichander - Sony Music South.mp3">
+                    <img style="height: fit-content;" src="./assests/card4img.jpeg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">LEO - Naa Ready Song Video</p>
+                    <p class="card-info">Thalapathy Vijay, Lokesh Kanagaraj, Anirudh Ravichander</p>
+                 </div>
+                 <div class="card">
+                    <img style="height: fit-content;" src="./assests/card5img.jpeg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Top 50- Global</p>
+                    <p class="card-info">Top Trending song in wolrd</p>
+                 </div>
+                 <div class="card">
+                    <img style="height: fit-content;" src="./assests/card6img.jpeg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Top 50- India</p>
+                    <p class="card-info">Top trending songs in india</p>
+                 </div>
+            </div>
+            <h2>Hindi Song</h2>
+            <div class="cards-container">
+                 <div class="card" data-song="./hindi/Chal Tere Ishq Mein - 8K Video  Gadar 2  Utkarsh S, Simratt  Vishal Mishra, Mithoon, Neeti Mohan - Zee Music Company.mp3">
+                    <img src="./hindi song thumnail/chal tere ishq me.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Chal Tere Ishq Mein (Female)</p>
+                    <p class="card-info">Utkarsh Sharma,Simratt Kaur, Vishal M,Mithoon,Neeti,Sayeed</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Lyrical  Saiyaara Title Song  Ahaan, Aneet  Tanishk Bagchi, Faheem Abdullah, Arslan Irshad Kamil - YRF.mp3">
+                    <img src="./hindi song thumnail/saiyaarra.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Saiyaara Reprise - Female</p>
+                    <p class="card-info"> Ahaan, Aneet, Tanishk, Faheem, Arslan, Shreya, Irshad</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Tera Fitoor Jab Se Chadh Gaya Re - Lyrics  Arijit Singh  Himesh Reshammiya  Evergreen Love Song - Best Of Udit Narayan.mp3">
+                    <img src="./hindi song thumnail/tera fitoor.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Tera fitoor</p>
+                    <p class="card-info">Arijit Singh, Himesh Reshammiya, Genius (2018)</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Thoda Thoda Pyaar  Sidharth Malhotra,Neha SharmaStebin Ben,Nilesh Ahuja,KumaarZee Music Originals - Bollywood Chartbusters.mp3">
+                    <img src="./hindi song thumnail/thoda thoda pyar hua.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Thoda Thoda Pyaar</p>
+                    <p class="card-info">Sidharth Malhotra,Neha Sharma|Stebin Ben,Nilesh Ahuja,Kumaar</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Dil Meri Na Sune Lyrical - Genius  Utkarsh Sharma, Ishita  Atif Aslam  Himesh Reshammiya - Tips Official.mp3">
+                    <img src="./hindi song thumnail/dil meri na sune.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Dil Meri Na Sune Lyrical</p>
+                    <p class="card-info">Utkarsh Sharma, Ishita | Atif Aslam </p>
+                 </div>
+                 <div class="card" data-song="./hindi/DEEWANIYAT Title Track - Ek Deewane Ki Deewaniyat  Harshvardhan Sonam  Vishal ,KaushikGuddu,Kunaal - Play DMF.mp3">
+                    <img src="./hindi song thumnail/deewaniyaat.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">DEEWANIYAT Title Track</p>
+                    <p class="card-info">Harshvardhan Sonam | Vishal ,KaushikGuddu,Kunaal</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Aankhein Khuli Song  Mohabbatein  Shah Rukh Khan, Aishwarya Rai  Lata Mangeshkar, Udit Narayan - YRF.mp3">
+                    <img src="./hindi song thumnail/aakhein khli.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Aankhein Khuli Song</p>
+                    <p class="card-info">Lata Mangeshkar, Udit Narayan</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Mere Mehboob Qayamat Hogi  Remix Version 🎧  LoFi x DJ Mix  GP REMIX 007 - GP_Remix_007.mp3">
+                    <img src="./hindi song thumnail/mere mehboob qyamat.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Mere Mehboob Qayamat Hogi  Remix</p>
+                    <p class="card-info">Kishor Kumar</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Pehli Pehli Baar Mohabbat Ki Hai Full Video Song  Sirf TumKumar Sanu,Alka YagnikSanjay K, Priya G - T-Series Bollywood Classics.mp3">
+                    <img src="./hindi song thumnail/pehli pehli baar.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Pehli Pehli Baar Mohabbat Ki Hai</p>
+                    <p class="card-info">Kumar Sanu,Alka Yagnik|Sanjay K, Priya G</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Aaj Se Teri - Lyrical  Padman  Akshay Kumar & Radhika Apte  Arijit Singh  Amit Trivedi - Zee Music Company.mp3">
+                    <img src="./hindi song thumnail/aaj se teri.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Aaj Se Teri - Lyrical</p>
+                    <p class="card-info"> Arijit Singh  Amit Trivedi</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Dulhe ka sehra.mp3">
+                    <img src="./hindi song thumnail/dulhe ka sehra.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Dulhe Ka Sehra</p>
+                    <p class="card-info">Dhadkan  Ishtar Music</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Kinna Sona Full Video  Marjaavaan  Sidharth M, Tara S  Meet Bros,Jubin N, Dhvani Bhanushali - T-Series.mp3">
+                    <img src="./hindi song thumnail/kinna sona.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">TopKinna Sona</p>
+                    <p class="card-info">Jubin N, Dhvani Bhanushali</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Main Agar Saamne  Raaz  Dino Morea  Bipasha Basu  Abhijeet & Alka Yagnik  Hindi Hit Songs - Tips Official.mp3">
+                    <img src="./hindi song thumnail/main agar saamne.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Main Agar Saamne</p>
+                    <p class="card-info">Abhijeet & Alka Yagnik</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Jeene Laga Hoon Lyrical - Ramaiya VastavaiyaGirish Kumar, Shruti Haasan Atif Aslam, Shreya Ghoshal - Tips Official.mp3">
+                    <img src="./hindi song thumnail/jeene laga hu.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Jeene Laga Hoon Lyrical</p>
+                    <p class="card-info">Ramaiya VastavaiyaGirish Kumar, Shruti Haasan Atif Aslam, Shreya Ghoshal</p>
+                 </div>
+                 <div class="card" data-song="./hindi/Barsaat Ke Mausam Mein  Naajayaz  Naseeruddin Shah  Kumar Sanu  Roop Kumar Rathod - Bollywood Hits.mp3">
+                    <img src="./hindi song thumnail/baarsaat ke mausam me.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">/Barsaat Ke Mausam Mein</p>
+                    <p class="card-info">Kumar Sanu  Roop Kumar Rathod</p>
+                 </div>  
+            </div>
+             <h2>Punjabi Song</h2>
+            <div class="cards-container">
+                 <div class="card" data-song="./punjabi/3 peg.mp3">
+                    <img src="./punjabi thumnail/3 peg.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">3 Peg Sharry Mann</p>
+                    <p class="card-info"> Mista Baaz, Parmish Verma,Ravi Raj</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/8 parche.mp3">
+                    <img src="./punjabi thumnail/8 parchi.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">8 Parche</p>
+                    <p class="card-info">Gur Sidhu, Gurneet Dosanjh</p>
+                 </div>
+                 <div class="card">
+                    <img src="./punjabi thumnail/californiya love.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Top 50- Global</p>
+                    <p class="card-info">Your daily updates of your most played</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/caliphornia love.mp3">
+                    <img src="./punjabi thumnail/duji vaar pyaar.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">CALIFORNIA LOVE </p>
+                    <p class="card-info">Cheema Y, Gur Sidhu</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/high rated gabru.mp3">
+                    <img src="./punjabi thumnail/high rated gabru.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">High Rated Gabru</p>
+                    <p class="card-info">Guru Randhawa</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/janni tera naa.mp3">
+                    <img src="./punjabi thumnail/jaani tera naa.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Janni tera naa</p>
+                    <p class="card-info">Sunanda Sharma</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/lahore diya.mp3">
+                    <img src="./punjabi thumnail/lahore diya.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Lahore diya</p>
+                    <p class="card-info">Guru Randhawa</p>
+                 </div><div class="card" data-song="./punjabi/mitti de dibba.mp3">
+                    <img src="./punjabi thumnail/mitti de tibba.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Mitti de tibba</p>
+                    <p class="card-info">Kaka, Afsha Khan</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/parindey.mp3">
+                    <img src="./punjabi thumnail/parindey b praak.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Parindey</p>
+                    <p class="card-info">B Praak</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/PATOLA.mp3">
+                    <img src="./punjabi thumnail/patola.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Patola</p>
+                    <p class="card-info">Irrfan Khan & Kirti Kulhari | Guru Randhawa</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/same beef.mp3">
+                    <img src="./punjabi thumnail/same beef.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Same beef</p>
+                    <p class="card-info">Sidhu Moose Wala, Byg Byrd</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/udaarian.mp3">
+                    <img src="./punjabi thumnail/udaarian.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Udaarian (Badi lambi hai kahani mere pyaar di) </p>
+                    <p class="card-info">Satinder Sartaaj</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/295 official.mp3">
+                    <img src="./punjabi thumnail/295.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">295 Official song</p>
+                    <p class="card-info">Sidhu Moose Wala, The Kidd, Moosetape</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/goat siddhu moosewala.mp3">
+                    <img src="./punjabi thumnail/goat sidhu moosewala.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Goat Sidhu Moose Wala</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                 </div>
+                 <div class="card" data-song="./punjabi/THE LAST RIDE.mp3">
+                    <img src="./punjabi thumnail/last ride.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">The Last Ride</p>
+                    <p class="card-info">Sidhu Moose Wala, Wazir Patar</p>
+                 </div>
+             </div>
+             <h2>Bhojpuri Song</h2>
+             <div class="cards-container">
+                 <div class="card" data-song="./bhojpuri/Daradiya Ae Balam - Daradiya Ae Balam.mp3">
+                    <img style="height: 5.5rem;" src="./bhojpuri thumnail/Daradiya-Ae-Balam-Bhojpuri-2026-20260703190800-500x500.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Daradiya Ae Balam</p>
+                    <p class="card-info">Khesari Lal Yadav, Shilpi Raj</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/गोदी मे लेके (Godi Me Leke).mp3">
+                    <img src="./bhojpuri thumnail/godi me leke khodi.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Godi me leke khodi e araja</p>
+                    <p class="card-info">Pawan Singh, Shilpi Raj</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Lollypop Lagelu.mp3">
+                    <img src="./bhojpuri thumnail/laalipop lagelu.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Lallipop Lagelu</p>
+                    <p class="card-info">Pawan Singh</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Choliya Ke Hook Raja Ji .mp3">
+                    <img src="./bhojpuri thumnail/lagaai dihi choliya.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Choliya ke hook raja ji</p>
+                    <p class="card-info">Arvind Akella(Kallu)</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Lahanga Se Mahanga  Pawan Singh.mp3">
+                    <img style="height: 5.5rem" src="./bhojpuri thumnail/Lahanga-Se-Mahanga-Bhojpuri-2026-20260619121734-500x500.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Lahanga se mehanga</p>
+                    <p class="card-info">Pawan Singh, Shivani Singh</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Maroon Color Sadiya.mp3">
+                    <img src="./bhojpuri thumnail/maroon kalar sariya.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Maroon Color Sadiya</p>
+                    <p class="card-info">Neelkaml Singh, Kalpna Patwari</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Patare Balam - Patare Balam (320 kbps).mp3">
+                    <img  src="./bhojpuri thumnail/Patare-Balam-Bhojpuri-2026-20260612204425-500x500.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Patare Balam</p>
+                    <p class="card-info">Ankush Raja, Shilpi Raj</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/सड़िया  Sadiya.mp3">
+                    <img src="./bhojpuri thumnail/sadiya.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Sadiyaa</p>
+                    <p class="card-info">Pawam Singh, Shivani Singh</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Dil Deewana Dadke Tohra Pyar Me.mp3">
+                    <img src="./bhojpuri thumnail/dil diwana dadke tohara pyar me.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Dil Diwana Dhadke</p>
+                    <p class="card-info">Khesari Lal Yadav</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/हरी हरी ओढ़नी.mp3">
+                    <img src="./bhojpuri thumnail/hari hari odhani.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Hari Hari Odhni</p>
+                    <p class="card-info">Pawan Singh, Dimpal Singh</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/काहे के सुतवलS सईया.mp3">
+                    <img src="./bhojpuri thumnail/kahe ke sutaula sayiya.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Kahe Ke Sutaula Saiya</p>
+                    <p class="card-info">Shilpi Raj, Ankush Raja</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/लाल घाघरा  Lal Gaghara.mp3">
+                    <img src="./bhojpuri thumnail/laal ghaghara.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Laal Gaghara</p>
+                    <p class="card-info">Pawan Singh, Shilpi Raj</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Le Le ayi coca cola.mp3">
+                    <img src="./bhojpuri thumnail/lele aayi ago coka cola.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Le Le ayi coca cola</p>
+                    <p class="card-info">Khesari Lal Yadav, Shilpi Raj</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/नथुनिया Nathuniya .mp3">
+                    <img src="./bhojpuri thumnail/nathuniya pe.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Nathuniya</p>
+                    <p class="card-info">Priyanka Singh, Khesari Lal Yadav</p>
+                 </div>
+                 <div class="card" data-song="./bhojpuri/Piya Doli Saja Ke Rakhna.mp3">
+                    <img src="./bhojpuri thumnail/piya ji ke muski.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Piya ji ke muski</p>
+                    <p class="card-info">Khesari Lal Yadav, Priyanka Singh</p>
+                 </div>
+                  <div class="card" data data-song="./bhojpuri/पुदीना ऐ हसीना Le Lo Pudina.mp3">
+                    <img src="./bhojpuri thumnail/pudina e hasina.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">pudina e hasina 2.0</p>
+                    <p class="card-info">Pawan Singh, Shilpi Raj</p>
+                 </div> 
+                 <div class="card" data-song="./bhojpuri/राते दिया बुताके.mp3">
+                    <img src="./bhojpuri thumnail/raat diya buta ke.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Raate diya butake</p>
+                    <p class="card-info">Pawan Singh, Indu Sonali</p>
+                 </div>
+                  <div class="card" data-song="./bhojpuri/तबला tabbla.mp3">
+                    <img src="./bhojpuri thumnail/tabbla.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Tabbla</p>
+                    <p class="card-info">Khesari Lal Yadav, Shilpi Raj</p>
+                 </div>
+               </div>
+               <h2>Haryanvi Song</h2>
+               <div class="cards-container">
+                 <div class="card" data-song="./hariyanvi/Chambal K Dakku se.mp3">
+                    <img src="./hariyanvi thumnail/chambal ke dakku.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Chambal ke dakku</p>
+                    <p class="card-info">Masoom Sharma, Swara Verma, Rahul Muana</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/COCO COLA.mp3">
+                    <img src="./hariyanvi thumnail/coca cola.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Coka Cola</p>
+                    <p class="card-info">Ruchika Jangid, Kay D</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Hero Honda.mp3">
+                    <img src="./hariyanvi thumnail/hero honda.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Hero Honda</p>
+                    <p class="card-info">Khushi Baliyan, Punit Choudhary, Raj Mawar</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Jaat Gelya Yaari.mp3">
+                    <img src="./hariyanvi thumnail/jaat gelya yaari.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Jaat Gellyan Yaari</p>
+                    <p class="card-info">Naveen Punia</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Kabootar.mp3">
+                    <img src="./hariyanvi thumnail/kabootar.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Kabootar</p>
+                    <p class="card-info">Renuka Panwar, Pranjal Dahiya, Vivek, Surender Romio, Aman Jaji, Rakesh Majreya, Sahil S</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/2 Khatole .mp3">
+                    <img src="./hariyanvi thumnail/khatola 2.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Khatole 2</p>
+                    <p class="card-info"> MASOOM SHARMA, Manjeet Mor, Chahal Saab, Vikash Rajana</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Laad Piya Ke .mp3">
+                    <img src="./hariyanvi thumnail/laap piya ke.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Laad piya ke</p>
+                    <p class="card-info">Pardeep Boora ,RajuPunjabi ,BinderDanoda</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Matak Chalungi .mp3">
+                    <img src="./hariyanvi thumnail/matak chalungi.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Matak Chalungi</p>
+                    <p class="card-info"> Aman Jaji, Raj Mawar, Manisha Sharma, Mukesh Jaji, Gulshan M, Ajay</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Nazra ke teer.mp3">
+                    <img src="./hariyanvi thumnail/nazra ke teer.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Nazra Ke Teer</p>
+                    <p class="card-info">Vikram Sarkar</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Ramayan Ka Saar .mp3">
+                    <img src="./hariyanvi thumnail/ramayan ka saar.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Ramayan Ka Sarr</p>
+                    <p class="card-info">Masoom Sharma, Amar Karnawal, Pinna Music</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Solid Body.mp3">
+                    <img src="./hariyanvi thumnail/solid body.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Solid Body</p>
+                    <p class="card-info">Ajay Hooda & Anjali Raghav</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/WARNING .mp3">
+                    <img src="./hariyanvi thumnail/warning.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">WARNING</p>
+                    <p class="card-info"> Masoom Sharma, Malika Kaliraman</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Yaari (Official Video) Masoom Sharma.mp3">
+                    <img src="./hariyanvi thumnail/yaari.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Yaari</p>
+                    <p class="card-info">Masoon Sharma</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Ramjhol Bole Gi  Masoom Sharma.mp3">
+                    <img src="./hariyanvi thumnail/pistol bole gi.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Pistol Bolegi</p>
+                    <p class="card-info"> Masoom Sharma, Sheenam Katholic, Kay D, Aarohi Raghav</p>
+                 </div>
+                 <div class="card" data-song="./hariyanvi/Raat Ke Shikari.mp3">
+                    <img src="./hariyanvi thumnail/raat ke shikari.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Raat Ke Shikari (Official Video)</p>
+                    <p class="card-info">Masoom Sharma</p>
+                 </div>
+               </div>
+                <h2>Bhakti Song</h2>
+               <div class="cards-container">
+                 <div class="card" data-song="./bhakti/ऐसी लागी लगन मीरा हो गई मगन .mp3">
+                    <img src="./bhakti thumnail/aise laagan.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Aisi Lagi Lagan with Lyrics</p>
+                    <p class="card-info"> Javed Ali </p>
+                 </div>
+                  <div class="card" data-song="./bhakti/Are dwarpalo Kanhaiya se keh do.अरे द्वारपालो कन्हैया से कह दो .mp3">
+                    <img src="./bhakti thumnail/are dwarpalo.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Are dwarpalo Kanhaiya se keh do</p>
+                    <p class="card-info">Ramkumar Lakkha</p>
+                 </div>
+                  <div class="card" data-song="./bhakti/Hey Dukh Bhanjan .mp3">
+                    <img src="./bhakti thumnail/he dhukh bhanjan ma.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Hey Dukh Bhanjan</p>
+                    <p class="card-info">Anup Jalota, and Hariharan</p>
+                 </div>
+                  <div class="card" data-song="./bhakti/ज़रा देर ठहरो राम तमन्ना यही है .mp3">
+                    <img src="./bhakti thumnail/jara der thehro ram.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">ज़रा देर ठहरो राम तमन्ना यही है</p>
+                    <p class="card-info">Prakash Gandhi</p>
+                 </div>
+                  <div class="card" data-song="./bhakti/Mahakaal (Official Video) B Praak.mp3">
+                    <img src="./bhakti thumnail/mahakaal.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Mahakaal (Official song) B Praak</p>
+                    <p class="card-info">B Praak</p>
+                 </div>
+                  <div class="card" data-song="./bhakti/Parvati Boli Shankar Se.mp3">
+                    <img src="./bhakti thumnail/parvati boli shankar se.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Parvati Boli Shankar</p>
+                    <p class="card-info">Hanshraj Raghuvanshi</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Radha Gori Gori.mp3">
+                    <img src="./bhakti thumnail/radha gori gori.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Radha Gori GorI</p>
+                    <p class="card-info">Indresh Upadhyay, B Praak</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Ram Ayenge  Jaya Kishori.mp3">
+                    <img src="./bhakti thumnail/ram ayenge.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Ram Ayenge</p>
+                    <p class="card-info">Jaya Kishori</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Achyutam Keshavam by Alka Yagnik.mp3">
+                    <img src="./bhakti thumnail/achyutam keshvam.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Achyutam Keshavam</p>
+                    <p class="card-info">Alka Yagnik</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Deva Deva - Brahmāstra.mp3">
+                    <img src="./bhakti thumnail/deva deva.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Deva Deva - Brahmāstra</p>
+                    <p class="card-info">Pritam, Arijit, Jonita</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Mere Baba Song Jubin Nautiyal.mp3">
+                    <img src="./bhakti thumnail/mere baba.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Mera Baba</p>
+                    <p class="card-info">Jubin Nautiyal, Payal Dev</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Namo Namo.mp3">
+                    <img src="./bhakti thumnail/namo namo.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Namo Namo - Kedarnath</p>
+                    <p class="card-info">Amit Trivedi</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Shish Navata hu.mp3">
+                    <img src="./bhakti thumnail/shish nawata hu.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Shish Nawata hu</p>
+                    <p class="card-info">Jubin Nautiyal, Payal Dev</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Ram Siya Ram .mp3">
+                    <img src="./bhakti thumnail/ram siya ram.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Ram siya ram</p>
+                    <p class="card-info">Sachet-Parampara</p>
+                 </div>
+                 <div class="card" data-song="./bhakti/Ye Chamak Ye Damak 2.0  Sab Kuch Sarkar Tumhi Se Hai.mp3">
+                    <img src="./bhakti thumnail/ye chamakk ye dhamankk.avif" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Ye Chamak Ye Damak 2.0</p>
+                    <p class="card-info">Sudhir Vyas</p>
+                 </div>
+               </div>
+               <h2>English Song</h2>
+               <div class="cards-container">
+                 <div class="card" data-song="./English/Shakira, Burna Boy - Dai Dai.mp3">
+                    <img src="./english thumnail/burna boy.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Burna Boy</p>
+                    <p class="card-info">Shakira</p>
+                 </div>
+                 <div class="card" data-song="./English/DHARIA - Sugar & Brownies.mp3">
+                    <img src="./english thumnail/dari sugar bra.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Sugar & Brownies</p>
+                    <p class="card-info">Dharia</p>
+                 </div>
+                 <div class="card" data-song="./English/DJ Snake - Let Me Love You (Official Music Video) ft. Justin Bieber.mp3">
+                    <img src="./english thumnail/dj sanke.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Let Me Love You</p>
+                    <p class="card-info">Justin Bieber, DJ Snake</p>
+                 </div>
+                 <div class="card" data-song="./English/Dua Lipa - Levitating Featuring DaBaby.mp3">
+                    <img src="./english thumnail/dua lipa levitating featuring.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Levitating Featuring</p>
+                    <p class="card-info">Dua Lipa</p>
+                 </div>
+                 <div class="card" data-song="./English/Indila - Dernière Danse.mp3">
+                    <img src="./english thumnail/indila dernier.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Indila</p>
+                    <p class="card-info">Dernière Danse</p>
+                 </div>
+                 <div class="card" data-song="./English/Lady Gaga, Bruno Mars - Die With A Smile.mp3">
+                    <img src="./english thumnail/lady gaga bruno mars.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Bruno Mars - Die With A Smile</p>
+                    <p class="card-info">Lady Gaga</p>
+                 </div>
+                 <div class="card" data-song="./English/Luis Fonsi - Despacito ft. Daddy Yankee - LuisFonsiVEVO.mp3">
+                    <img src="./english thumnail/luis fonsi despito.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Despacito ft. Daddy Yankee</p>
+                    <p class="card-info"> LuisFonsi</p>
+                 </div>
+                 <div class="card" data-song="./English/MILLIONAIRE SONG YoYoHoneySingh.mp3">
+                    <img src="./english thumnail/millionire.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">MILLIONAIRE</p>
+                    <p class="card-info">YoYoHoneySingh</p>
+                 </div>
+                 <div class="card" data-song="./English/Jennifer Lopez - On The Floor .mp3">
+                    <img src="./english thumnail/on the floor.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">On The Floor</p>
+                    <p class="card-info">Jennifer Lopez</p>
+                 </div>
+                 <div class="card" data-song="./English/Otilia - Bilionera.mp3">
+                    <img src="./english thumnail/otillia billionora.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Bilionera</p>
+                    <p class="card-info">Otilia</p>
+                 </div>
+                 <div class="card" data-song="./English/Boney M - Rasputin.mp3">
+                    <img src="./english thumnail/rasputin.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Rasputin</p>
+                    <p class="card-info">Boney M</p>
+                 </div>
+                 <div class="card" data-song="./English/Ed Sheeran - Sapphire.mp3">
+                    <img src="./english thumnail/sapphire.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Sapphire</p>
+                    <p class="card-info">Ed Sheeran</p>
+                 </div>
+                 <div class="card" data-song="./English/Serena - Safari (Official).mp3">
+                    <img src="./english thumnail/sarina safari.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Safari</p>
+                    <p class="card-info">Serena</p>
+                 </div>
+                 <div class="card" data-song="./English/Ed Sheeran - Shape of You.mp3">
+                    <img src="./english thumnail/shape of you.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Shape of You</p>
+                    <p class="card-info">Ed Sheeran</p>
+                 </div>
+                 <div class="card" data-song="./English/Shakira - Waka Waka.mp3">
+                    <img src="./english thumnail/waka waka.jpg" class="card-img" alt="Top 50">
+                    <p class="card-tittle">Waka Waka</p>
+                    <p class="card-info">Shakira</p>
+                 </div>
+               </div>
+               <div class="footer">
+                  <div class="line"></div>
+               </div>
+               
+         </div>
+       <!-- </div> -->
+      <div class="music-player">
+
+        <!-- Left Album Section -->
+        <div class="album" id="albumSection">
+
+           <img id="albumImg" src="" alt="">
+
+           <div class="song-details">
+             <p id="songTitle"></p>
+             <p id="artistName"></p>
+           </div>
+
+         </div>
+
+        <!-- Center Player -->
+        <div class="player">
+
+          <div class="player-controls">
+            <i class="fa-solid fa-shuffle player-control-icon"></i>
+
+            <i class="fa-solid fa-backward-step player-control-icon" id="prevBtn"></i>
+
+            <i class="fa-solid fa-circle-play player-control-icon" id="playBtn"></i>
+
+            <i class="fa-solid fa-forward-step player-control-icon" id="nextBtn"></i>
+
+            <i class="fa-solid fa-repeat player-control-icon"></i>
+        </div>
+
+        <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+
+            <input type="range" class="progress-bar" min="0" max="100" step="1">
+
+            <span class="end-time">00:00</span>
+         </div>
+
+      </div>
+
+    <!-- Right Controls -->
+    <div class="controls">
+      <i class="fa-solid fa-volume-low control-icon" id="volumeIcon"></i>
+
+    <input
+        type="range"
+        id="volumeBar"
+        class="volume-bar"
+        min="0"
+        max="100"
+        value="100"
+    >
+    </div>
+
+ </div>
+
+ <audio id="audioPlayer"></audio>
+<script src="script.js"></script>
+</body>
+</html>
