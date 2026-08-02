@@ -6,6 +6,7 @@ body {
     color: #fff;
 
 }
+
 .main{
     display: flex;
     height: 100vh;
@@ -28,7 +29,7 @@ body {
     border-radius: 1rem;
     overflow: auto;
     padding: 0 1rem 0 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: -4rem;
 }
 .music-player{
     background-color: #000000;
@@ -74,7 +75,8 @@ body {
     height: 100%;
     margin-top: 0.5rem;
     padding-top:  0.5rem ;
-    padding-left: 0.8rem;
+    padding-left: 0.8rem ;
+    padding-right: 0.8rem ;
  }
  .option{
     display: flex;
@@ -99,7 +101,7 @@ body {
     
  }
  .box{
-   height: 7rem;
+   height: 8rem;
    background-color: #232323;
    border-radius: 0.7rem;
    margin: 0.75rem 0 0.75rem 0 ;
@@ -184,8 +186,10 @@ body {
    font-size: 0.8rem;
    opacity: 0.75;
    margin-top: -0.5rem;
+   unicode-bidi: isolate;
+
  }
- .card img{
+ .card-img{
   height: 7rem;
  }
  .footer{
@@ -358,6 +362,8 @@ body {
     background:#1db954;
     margin-top:-2.89px;
 }
+
+
 /* =================== TABLET =================== */
 
 @media (max-width:992px){
@@ -459,7 +465,7 @@ body {
 @media (max-width:480px){
 
     .card{
-        width: 75%;
+        width:90%;
     }
 
     .player-controls i{
@@ -480,4 +486,24 @@ body {
         width:65%;
     }
 
+}
+
+.player-controls,
+.player-controls * {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.card {
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+h2 {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
