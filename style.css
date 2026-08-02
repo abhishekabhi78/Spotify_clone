@@ -459,7 +459,7 @@ body {
 @media (max-width:480px){
 
     .card{
-        width:90%;
+        width: 75%;
     }
 
     .player-controls i{
