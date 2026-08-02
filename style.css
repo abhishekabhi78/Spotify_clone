@@ -418,6 +418,9 @@ body {
         width:45%;
         margin:10px;
     }
+    .card-img{
+        height: 10rem;
+    }
 
     .sticky-nav-options .hide{
         display:none;
